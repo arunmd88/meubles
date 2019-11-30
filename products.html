@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MEUBLES</title>
+<link rel="icon" href="img/logo_title.png" type="image/png" sizes="16x16">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="header">
+<div class="container-fluid header1">
+<div class="row">
+<div class="col-sm-3 col-md-2 col-lg-2"><a href="index.html"><img class="logo" src="img/logo_test.png"/></a></div>
+<div class="col-sm-6 col-md-7 col-lg-7">
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="col-sm-3 col-md-3 col-lg-3">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+<li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Bedroom</a></li>
+        <li><a href="#">Dining</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Living Room</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav2"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li class="nav2"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div id="products_catalog">
+<h3 class="heading">FEATURED PRODUCTS</h3>
+
+<div class="container-fluid"> 
+  
+  <div class="row">
+  <div class="col-sm-2">
+  
+  <h4>Price Range</h4>
+
+<div class="slidecontainer">
+  <input type="range" min="10000" max="100000" value="50000" class="slider" id="myRange">
+  <div id="text">
+  </div>
+  <br/>
+  <p>Value(Rs.): <span id="demo"></span></p>
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<form action="/action_page.php">
+  <input type="checkbox" name="furniture1" value="Bedroom"> Bedroom<br>
+  <input type="checkbox" name="furniture2" value="Dining"> Dining<br>
+  <input type="checkbox" name="furniture3" value="Living" checked> Living Room<br><br>
+  <input type="submit" value="Submit">
+</form>
+  
+  </div>
+  <div class="col-sm-10">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product1.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Apollo RHS Sofa with Ottoman in Grey & Blue Colour Finish
+		<p class="product_agent">by Evok</p>
+		<p class="product_price">Rs.41,990</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product4.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Siramika Solid Wood King Size Bed with Storage in Rustic Teak Finish
+		<p class="product_agent">by Mudramark</p>
+		<p class="product_price">Rs.76,874</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product5.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Daiton Six Seater Dining Set with Bench in Expresso Finish
+		<p class="product_agent">by Hometown</p>
+		<p class="product_price">Rs.21,990</p>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Tempura 6 Seater Dining Set with Bench in Natural and Cream Finish
+		<p class="product_agent">by Mintwud</p>
+		<p class="product_price">Rs.35,264</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product7.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Jordan RHS Sectional Sofa in Blue and Grey Colour Finish
+		<p class="product_agent">by Meubles Casa</p>
+		<p class="product_price">Rs.39,999</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="img/product4.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Osumi Solid Wood Queen Size Bed in Chocolate Finish
+		<p class="product_agent">by Mintwud</p>
+		<p class="product_price">Rs.19,658</p>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-sm-12">
+  <ul class="pagination">
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  
+  
+</div>
+
+</div>
+
+<div id="trending">
+
+<div id="myCarousel" class="carousel slide">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slideshow1.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Good Vibes Only</h1>
+          <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+          <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Browse gallery</a>
+        </p></pthis></div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/slideshow2.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Every Moment Every Day Beyond Words</h1>
+		  <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/slideshow3.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Come Gather At Our Table</h1>
+		  <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+
+</div>
+
+<div id="footer">
+<div class="container-fluid" id="footer1">
+<div class="row">
+<div class="col-sm-6 col-md-8 col-lg-9">
+<h3>ABOUT US</h3>
+<p align="justify">Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+ porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+ quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+ Aenean imperdiet. Etiam ultricies nisi vel augue. . Curabitur ullamcorper ultricies nisi.
+ Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+ semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+ pulvinar, hendrerit id, lorem.</p>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+<h3>CONTACT US</h3>
+<p>Call us: 616-550-4684</p>
+<p>Email:customercare@meubles.in</p>
+<p>Follow us</p>
+<ul>
+<li><i class="fa fa-facebook"></i></li>
+<li><i class="fa fa-twitter"></i></li>
+<li><i class="fa fa-instagram"></i></li>
+<li><i class="fa fa-youtube"></i></li>
+<li><i class="fa fa-pinterest"></i></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container" id="footer2">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12">
+<p>@2019 MEUBLES</p>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
